@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 9094469012074101247}
   - component: {fileID: 246868805261083593}
   - component: {fileID: 5787552911747563312}
-  - component: {fileID: 2382688424548821096}
+  - component: {fileID: -2510419675963476327}
   m_Layer: 0
   m_Name: Door Front
   m_TagString: Untagged
@@ -80,7 +80,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &2382688424548821096
+--- !u!65 &-2510419675963476327
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

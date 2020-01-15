@@ -215,7 +215,7 @@ GameObject:
   - component: {fileID: 6976156379385710283}
   - component: {fileID: 2128883188789116157}
   - component: {fileID: 5672220578830385156}
-  - component: {fileID: 8795578554963014656}
+  - component: {fileID: 6311508553223118817}
   m_Layer: 0
   m_Name: Sticky Note
   m_TagString: Untagged
@@ -284,7 +284,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &8795578554963014656
+--- !u!65 &6311508553223118817
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

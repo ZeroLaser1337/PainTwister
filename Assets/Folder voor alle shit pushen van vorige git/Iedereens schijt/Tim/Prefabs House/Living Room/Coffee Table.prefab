@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8913933335078546718}
   - component: {fileID: 499795779109623592}
   - component: {fileID: 6184331757833841617}
-  - component: {fileID: 304811147070549996}
+  - component: {fileID: -7236726815713802060}
   m_Layer: 0
   m_Name: Coffee Table
   m_TagString: Untagged
@@ -79,7 +79,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &304811147070549996
+--- !u!65 &-7236726815713802060
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

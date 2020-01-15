@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2665425764117982535}
   - component: {fileID: 6459982808631875441}
   - component: {fileID: 764188378859694984}
-  - component: {fileID: 4207298432524999000}
+  - component: {fileID: -3672179277943470032}
   m_Layer: 0
   m_Name: Side Table
   m_TagString: Untagged
@@ -79,7 +79,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &4207298432524999000
+--- !u!64 &-3672179277943470032
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

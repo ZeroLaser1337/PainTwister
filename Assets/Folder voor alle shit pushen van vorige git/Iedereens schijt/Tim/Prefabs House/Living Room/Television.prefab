@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4371310779106104255}
   - component: {fileID: 4751584860089067913}
   - component: {fileID: 1354893175284585840}
-  - component: {fileID: 3483639739810034400}
+  - component: {fileID: -2160974745304847240}
   m_Layer: 0
   m_Name: Television
   m_TagString: Untagged
@@ -82,7 +82,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &3483639739810034400
+--- !u!64 &-2160974745304847240
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
