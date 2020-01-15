@@ -8,6 +8,4 @@ public class SwitchInfo : ScriptableObject
 {
     public AudioClip switchAudio;
     public bool switchState;
-    public GameObject switchToggle;
-    protected AudioManagement audioManager;
-}
+    public GameObject switchToggle;}

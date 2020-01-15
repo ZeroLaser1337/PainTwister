@@ -4,12 +4,6 @@ using UnityEngine;
 
 public class StorageRoomDialogue : ConversationSystem
 {
-    public Boxes storageRoom;
-
-    void OnEnable()
-    {
-        mainQuestion.text = storageRoom.boxesQuestion;
-    }
     void Update()
     {
         UpdateButtons();
