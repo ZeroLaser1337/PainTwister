@@ -115,6 +115,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 549101367901115597}
     m_Modifications:
+    - target: {fileID: -927199367670048503, guid: ab0aef7016b6e1140b85b772d56782d4,
+        type: 3}
+      propertyPath: m_Name
+      value: Cupboard Door
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: ab0aef7016b6e1140b85b772d56782d4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -170,16 +175,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: ab0aef7016b6e1140b85b772d56782d4,
-        type: 3}
-      propertyPath: m_Name
-      value: Cupboard Door
-      objectReference: {fileID: 0}
     - target: {fileID: -1504981713932161579, guid: ab0aef7016b6e1140b85b772d56782d4,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 3e56b83ba8d5e40489d858e04bc0acd5, type: 2}
+    - target: {fileID: -1504981713932161579, guid: ab0aef7016b6e1140b85b772d56782d4,
+        type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab0aef7016b6e1140b85b772d56782d4, type: 3}
 --- !u!1 &7977313698908079748 stripped
