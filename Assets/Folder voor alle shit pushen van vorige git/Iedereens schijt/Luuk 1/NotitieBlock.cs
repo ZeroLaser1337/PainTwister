@@ -4,25 +4,42 @@ using UnityEngine;
 
 public class NotitieBlock : MonoBehaviour
 {
-    public SpriteRenderer notePad;
+    public GameObject notePad;
+    public SpriteRenderer spriteRenderer;
     public List<Sprite> notePadPages;
 
     public int pageInt;
-    public int unlocked;
 
+    public void Start()
+    {
+        notePad = gameObject;
+    }
     public void Update()
     {
+        OpenNotePad();
         PageChange();
+    }
+
+    public void OpenNotePad()
+    {
+        if (Input.GetButton("Oculus_GearVR_DpadY"))
+        {
+            notePad.SetActive(true);
+        }
+        else if (Input.GetButton("Oculus_GearVR_DpadY"))
+        {
+            notePad.SetActive(false);
+        }
     }
 
     public void PageChange()
     {
-        if (Input.GetButtonDown("NextPage") && pageInt < 0)
+        if (Input.GetButtonDown("Oculus_CrossPlatform_PrimaryHandTrigger") && pageInt < 0)
         {
             pageInt++;
             ForLoop(pageInt);
         }
-        if (Input.GetButtonDown("PrevPage") && pageInt >= (notePadPages.Count + 1))
+        if (Input.GetButtonDown("Oculus_CrossPlatform_SecondaryHandTrigger") && pageInt >= (notePadPages.Count + 1))
         {
             pageInt--;
             ForLoop(pageInt);
@@ -31,9 +48,7 @@ public class NotitieBlock : MonoBehaviour
 
     public void ForLoop(int i)
     {
-        for (int b = 0; b < notePadPages.Count; b++)
-        {
-        }
+        spriteRenderer.sprite = notePadPages[i];
     }
 }
 //__________________________________________________________________________________________________________________________________________________________________________________________________________________________//
