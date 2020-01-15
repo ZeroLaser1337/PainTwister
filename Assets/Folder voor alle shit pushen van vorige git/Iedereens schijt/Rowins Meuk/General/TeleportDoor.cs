@@ -7,13 +7,16 @@ public class TeleportDoor : MonoBehaviour
 {
     public bool storage, consultant, house;
     public Loading loading;
+    public KnowledgeMeter kn;
 
     public string room;
+    [Header("Extra House")]
+    public string spooky, middle;
 
     void OnCollisionEnter(Collision coll)
     {
         if(coll.gameObject.CompareTag("PlayerTag"))
-        {
+        {   
             print("Door");
             if(storage == true)
             {
@@ -27,7 +30,18 @@ public class TeleportDoor : MonoBehaviour
             }
             else if(house == true)
             {
-                loading.LevelLoader(room);
+                if(kn.knowledgeAmount >= 0 && kn.knowledgeAmount < 30)
+                {
+                  loading.LevelLoader(room);  
+                }
+                else if(kn.knowledgeAmount >= 30 && kn.knowledgeAmount < 60)
+                {
+                    loading.LevelLoader(room);
+                }
+                else if(kn.knowledgeAmount >= 60)
+                {
+                    loading.LevelLoader(room);
+                }
             }
         }
     }
