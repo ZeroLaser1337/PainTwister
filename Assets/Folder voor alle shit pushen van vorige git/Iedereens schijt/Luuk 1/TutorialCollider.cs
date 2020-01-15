@@ -6,11 +6,16 @@ public class TutorialCollider : MonoBehaviour
 {
     public int tutorialPopUpNumber;
     public Sprite notes;
+    public bool notesAdded;
 
     public void OnTriggerEnter(Collider other)
     {
         other.GetComponent<TutorialPopUp>().TutPopUp(tutorialPopUpNumber);
-        other.GetComponent<NotitieBlock>().notePadPages.Add(notes);
+        if (notesAdded == false)
+        {
+            other.gameObject.GetComponentInChildren<NotitieBlock>(true).notePadPages.Add(notes);
+        }
+        notesAdded = true;
     }
 
     public void OnTriggerExit(Collider other)
