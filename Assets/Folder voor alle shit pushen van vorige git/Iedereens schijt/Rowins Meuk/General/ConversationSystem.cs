@@ -8,6 +8,7 @@ using TMPro;
 public class ConversationSystem : MonoBehaviour
 {
     public Quest quest;
+    public KnowledgeMeter knowledge;
     public Audiodialog audiodialog;
     protected DialogueProgress dialogueProgress;
     public TextMeshProUGUI mainQuestion;
