@@ -7,6 +7,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using TMPro;
 using OVRTouchSample;
 #if UNITY_EDITOR
 using UnityEngine.SceneManagement;
@@ -17,6 +18,9 @@ namespace OVRTouchSample
     [RequireComponent(typeof(OVRGrabber))]
     public class Hand : MonoBehaviour
     {
+        public TextMeshProUGUI check;
+        public int checkint;
+
         public const string ANIM_LAYER_NAME_POINT = "Point Layer";
         public const string ANIM_LAYER_NAME_THUMB = "Thumb Layer";
         public const string ANIM_PARAM_NAME_FLEX = "Flex";
@@ -177,6 +181,11 @@ namespace OVRTouchSample
             {
                 HandPose customPose = m_grabber.grabbedObject.GetComponent<HandPose>();
                 if (customPose != null) grabPose = customPose;
+                if(m_grabber.grabbedObject.GetComponent<OVRGrabbable>())
+                {
+                    checkint++;
+                    check.text = checkint.ToString();
+                }
             }
             // Pose
             HandPoseId handPoseId = grabPose.PoseId;
