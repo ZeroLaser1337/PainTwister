@@ -6,8 +6,9 @@ public class TutorialCollider : MonoBehaviour
 {
     public int tutorialPopUpNumber;
     public int knowledgeAdded;
-    public Sprite notes;
     public bool notesAdded;
+
+    public Sprite notes;
 
     public void OnTriggerEnter(Collider other)
     {
@@ -21,6 +22,6 @@ public class TutorialCollider : MonoBehaviour
 
     public void OnTriggerExit(Collider other)
     {
-        other.GetComponent<TutorialPopUp>().timer = 0;
+        other.GetComponent<TutorialPopUp>().timer = 5;
     }
 }
