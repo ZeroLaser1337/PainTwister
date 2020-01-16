@@ -21,7 +21,7 @@ public class Quest : MonoBehaviour
 
         NewQuest(storyQuests[listPos]);
 
-        GameCompleted(false);
+        //GameCompleted(false);
     }
 
     public void OnCollisionEnter(Collision c)
@@ -56,7 +56,7 @@ public class Quest : MonoBehaviour
         }
         else
         {
-            GameCompleted(true);
+            //GameCompleted(true);
         }
     }
 
@@ -65,8 +65,8 @@ public class Quest : MonoBehaviour
         myQuestText.text = item.questText;
     }
 
-    public void GameCompleted(bool done)
-    {
-        gameOverGO.SetActive(done);
-    }
+    //public void GameCompleted(bool done)
+    //{
+     //   gameOverGO.SetActive(done);
+    //}
 }

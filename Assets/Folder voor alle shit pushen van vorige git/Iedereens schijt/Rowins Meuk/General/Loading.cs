@@ -17,9 +17,9 @@ public class Loading : MonoBehaviour
     IEnumerator LoadLevel(string sceneIndex)
     {
         //transition.SetTrigger("Play");
-        print("fuck");
+
         yield return new WaitForSeconds(loadingTime);
 
-        //SceneManager.LoadScene(sceneIndex);
+        SceneManager.LoadScene(sceneIndex);
     }
 }

@@ -9,17 +9,14 @@ public class TeleportDoor : MonoBehaviour
     public bool storage, consultant, house;
     public Loading loading;
     public KnowledgeMeter kn;
-    public TextMeshProUGUI debug;
-
     public string room;
     [Header("Extra House")]
     public string spooky, middle;
 
     public void OnCollisionEnter(Collision coll)
     {  
-        if(coll.gameObject.tag == ("Player"))
+        if(coll.gameObject.CompareTag("PlayerTag"))
         {
-            debug.text = "KYS"; 
             print("Door");
             if (storage == true)
             {

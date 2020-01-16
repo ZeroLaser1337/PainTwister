@@ -30,5 +30,12 @@ public class Movement : MonoBehaviour
 
         transform.Translate(dir * movementSpeed * Time.deltaTime);
     }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Door")
+        {
+            Debug.Log(collision.gameObject.name);
+        }
+    }
 
 }

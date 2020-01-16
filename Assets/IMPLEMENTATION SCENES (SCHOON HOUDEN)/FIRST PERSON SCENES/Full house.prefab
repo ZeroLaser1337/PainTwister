@@ -20,26 +20,6 @@ MonoBehaviour:
   room: Storage Room
   spooky: 
   middle: 
---- !u!114 &1065495353527002716
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1891761860485531059}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 226f837ce33d27e4d9b09d83b2ea2405, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  storage: 1
-  consultant: 0
-  house: 0
-  loading: {fileID: 8529998394685081343, guid: 8169fc4e2a9e3794d924516fd550e3d1, type: 3}
-  kn: {fileID: 0}
-  room: Storage Room
-  spooky: 
-  middle: 
 --- !u!1 &6749748889340567959
 GameObject:
   m_ObjectHideFlags: 0
@@ -180,12 +160,6 @@ Transform:
 --- !u!1 &5090251588297866936 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5404569029529188008, guid: 4d155dbed3b4a62469eca5977a73b9af,
-    type: 3}
-  m_PrefabInstance: {fileID: 983146173889415184}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1891761860485531059 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1721559643545259427, guid: 4d155dbed3b4a62469eca5977a73b9af,
     type: 3}
   m_PrefabInstance: {fileID: 983146173889415184}
   m_PrefabAsset: {fileID: 0}
