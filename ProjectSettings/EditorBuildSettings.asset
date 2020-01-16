@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/FirstPersonControllerbuild/Scenes for first person/First person house
-      start.unity
+    path: Assets/FirstPersonControllerbuild/Scenes for first person/House scenes/First
+      person house start.unity
     guid: 57ceb157c776ea8429eaed3368027c78
   - enabled: 1
     path: Assets/FirstPersonControllerbuild/Scenes for first person/First person consult.unity
@@ -17,7 +17,13 @@ EditorBuildSettings:
       room.unity
     guid: 20cfb165502d5394ab4624605902e173
   - enabled: 1
+    path: Assets/FirstPersonControllerbuild/Scenes for first person/House scenes/Bad.unity
+    guid: eb30d538dd3d9324f98b5e8da838377e
+  - enabled: 1
     path: Assets/FirstPersonControllerbuild/Scenes for first person/House scenes/First
       person house.unity
+    guid: bd4469e1077f4864b9dded0eb16eeaa8
+  - enabled: 1
+    path: Assets/FirstPersonControllerbuild/Scenes for first person/House scenes/Good.unity
     guid: 4792e9d0ef8fcc041a928b56ee70454f
   m_configObjects: {}
