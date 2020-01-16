@@ -9,11 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 356a9761794268640acddf171b5419d0, type: 3}
-  m_Name: KnowledgeItem
+  m_Script: {fileID: 11500000, guid: ac056c0f1d624334ebbdb48e8e3e144b, type: 3}
+  m_Name: 4. Go Back To Consult
   m_EditorClassIdentifier: 
-  questItemNum: 0
-  questText: 
-  item: {fileID: 0}
-  positionToSpawn: {fileID: 0}
-  knowledge: 0
+  questItemNum: 3
+  questText: Ga terug naar het Consult
+  fourButtons: 1
