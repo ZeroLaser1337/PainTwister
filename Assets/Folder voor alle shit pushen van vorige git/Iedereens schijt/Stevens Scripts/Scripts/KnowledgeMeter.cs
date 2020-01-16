@@ -10,6 +10,12 @@ public class KnowledgeMeter : MonoBehaviour
     {
         DontDestroyOnLoad(this);
     }
+
+    public void ResetKnowledge()
+    {
+        knowledgeAmount = 0;
+    }
+
     public void UpdateKnowledge(int amount)
     {
         knowledgeAmount += amount;

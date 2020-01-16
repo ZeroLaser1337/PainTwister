@@ -9,7 +9,6 @@ public class Quest : MonoBehaviour
     public List<QuestItem> storyQuests;
 
     public GameObject itemsSpawned;
-    public GameObject tutPopUp;
     public GameObject gameOverGO;
 
     public TextMeshProUGUI myQuestText;
@@ -42,7 +41,7 @@ public class Quest : MonoBehaviour
     {
         item.QuestStart(this, itemsSpawned.transform);
 
-        newText(storyQuests[listPos]);
+        //newText(storyQuests[listPos]);
 
         //put 4 button bool equal to storyQuests[listPos}.fourButtons
     }
