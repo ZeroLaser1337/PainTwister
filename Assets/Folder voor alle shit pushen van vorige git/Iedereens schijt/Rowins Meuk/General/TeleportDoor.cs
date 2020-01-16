@@ -15,7 +15,7 @@ public class TeleportDoor : MonoBehaviour
 
     void OnCollisionEnter(Collision coll)
     {
-        if(coll.gameObject.CompareTag("PlayerTag"))
+        if(coll.gameObject.CompareTag("Player"))
         {   
             print("Door");
             if(storage == true)
