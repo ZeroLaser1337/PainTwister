@@ -2,12 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
-public class UIX : MonoBehaviour
+public class UiScript : MonoBehaviour
 {
     public KnowledgeMeter knowledgeMeter;
-    public Quest quest;
+    public Quest ques;
 
-    public Text questText;
-    public Text knowledge;
+    public TextMeshPro knowledge;
+    public TextMeshPro q;
+
+    public void Update()
+    {
+        knowledge.text = knowledgeMeter.knowledgeAmount.ToString();
+        q.text = ques.storyQuests[ques.listPos].questText;
+    }
 }
