@@ -144,7 +144,7 @@ MonoBehaviour:
   house: 0
   loading: {fileID: 8529998394685081343, guid: 8169fc4e2a9e3794d924516fd550e3d1, type: 3}
   kn: {fileID: 1168494333}
-  room: 
+  room: Consultant
   spooky: 
   middle: 
 --- !u!1 &136794259
@@ -572,6 +572,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4119356860052208889, guid: 29721e5f1bf60144889109b722e253dc,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4119356861371959667, guid: 29721e5f1bf60144889109b722e253dc,
+        type: 3}
+      propertyPath: EnableCollision
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29721e5f1bf60144889109b722e253dc, type: 3}
 --- !u!4 &785460289 stripped
@@ -654,7 +664,7 @@ MonoBehaviour:
   house: 0
   loading: {fileID: 8529998394685081343, guid: 8169fc4e2a9e3794d924516fd550e3d1, type: 3}
   kn: {fileID: 1168494333}
-  room: 
+  room: Storage Room
   spooky: 
   middle: 
 --- !u!1 &1069171288
