@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Destination : MonoBehaviour
 {
-    public KnowledgeMeter knowledgeMeter;
+    public Quest quest;
+
     public bool backHome;
     public string myName,myNameBad,myNameGood;
 
@@ -14,17 +15,17 @@ public class Destination : MonoBehaviour
         {
             if (backHome)
             {
-                if(knowledgeMeter.knowledgeAmount < 30)
+                if(quest.knowledgeMeter.knowledgeAmount < 30)
                 {
                     c.gameObject.GetComponent<DoorTeleport>().NewDestination(myNameBad);
                 }
 
-                else if(knowledgeMeter.knowledgeAmount > 30 && knowledgeMeter.knowledgeAmount < 90)
+                else if(quest.knowledgeMeter.knowledgeAmount > 30 && quest.knowledgeMeter.knowledgeAmount < 90)
                 {
                     c.gameObject.GetComponent<DoorTeleport>().NewDestination(myName);
                 }
 
-                else if(knowledgeMeter.knowledgeAmount >= 90)
+                else if(quest.knowledgeMeter.knowledgeAmount >= 90)
                 {
                     c.gameObject.GetComponent<DoorTeleport>().NewDestination(myNameGood);
                 }

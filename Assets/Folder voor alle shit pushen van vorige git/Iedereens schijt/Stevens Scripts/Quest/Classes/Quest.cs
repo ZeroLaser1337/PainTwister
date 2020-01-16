@@ -6,10 +6,12 @@ using TMPro;
 
 public class Quest : MonoBehaviour
 {
+    public KnowledgeMeter knowledgeMeter;
     public List<QuestItem> storyQuests;
 
     public GameObject itemsSpawned;
     public GameObject gameOverGO;
+    public GameObject player;
 
     public TextMeshProUGUI myQuestText;
 

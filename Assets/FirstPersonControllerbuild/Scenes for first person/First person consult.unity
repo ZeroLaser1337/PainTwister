@@ -270,7 +270,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abd4a8acf80650243b7b388bc29664cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myName: First person house back from consult
+  quest: {fileID: 1761673043170046459, guid: 3cb7ad74ccd5c264fa01332d038e1d05, type: 3}
+  spawnLoc: {fileID: 8183338935588212101, guid: df2b591fef5085e4591c0c4ff68b5c32,
+    type: 3}
+  backHome: 1
+  myName: First person house
+  myNameBad: First person house
+  myNameGood: First person house
 --- !u!1 &562134861
 GameObject:
   m_ObjectHideFlags: 0
