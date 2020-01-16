@@ -24,18 +24,18 @@ public class Quest : MonoBehaviour
         //GameCompleted(false);
     }
 
-    public void OnCollisionEnter(Collision c)
-    {
-        if(c.collider.gameObject.tag == "Item")
-        {
-            if(storyQuests[listPos].questItemNum == c.collider.gameObject.GetComponent<QuestItemNumber>().questNumber)
-            {
-                storyQuests[listPos].PickUp(this);
+    //public void OnCollisionEnter(Collision c)
+    //{
+    //    if(c.collider.gameObject.tag == "Item")
+    //    {
+    //        if(storyQuests[listPos].questItemNum == c.collider.gameObject.GetComponent<QuestItemNumber>().questNumber)
+    //        {
+    //            storyQuests[listPos].PickUp(this);
 
-                Destroy(c.collider.gameObject);
-            }
-        }
-    }
+    //            Destroy(c.collider.gameObject);
+    //        }
+    //    }
+    //}
 
     public void NewQuest(QuestItem item)
     {
