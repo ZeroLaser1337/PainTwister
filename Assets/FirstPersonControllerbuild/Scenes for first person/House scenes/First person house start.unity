@@ -243,9 +243,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quest: {fileID: 1486678485}
-  number: {fileID: 0}
+  number: {fileID: 94434189}
   backHome: 0
-  myName: First person consult
+  myName: First person storage room
   myNameBad: 
   myNameGood: 
 --- !u!54 &94434194
@@ -806,7 +806,7 @@ MonoBehaviour:
   quest: {fileID: 1486678485}
   number: {fileID: 1880773228}
   backHome: 0
-  myName: First person storage room
+  myName: First person consult
   myNameBad: 
   myNameGood: 
 --- !u!54 &684563096

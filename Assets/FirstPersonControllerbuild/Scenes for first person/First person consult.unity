@@ -271,11 +271,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quest: {fileID: 1761673043170046459, guid: 3cb7ad74ccd5c264fa01332d038e1d05, type: 3}
-  number: {fileID: 0}
+  number: {fileID: 392821439}
   backHome: 1
   myName: First person house
   myNameBad: Bad
   myNameGood: Good
+--- !u!114 &392821439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 392821436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f82189650939754bb66479bd5aed8dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questNumber: 0
 --- !u!1 &562134861
 GameObject:
   m_ObjectHideFlags: 0
@@ -406,7 +419,7 @@ PrefabInstance:
     - target: {fileID: 7868058389609379281, guid: 2cc33cc149c974c45af0c6c9613ac683,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.089
+      value: -1.12
       objectReference: {fileID: 0}
     - target: {fileID: 7868058389609379281, guid: 2cc33cc149c974c45af0c6c9613ac683,
         type: 3}

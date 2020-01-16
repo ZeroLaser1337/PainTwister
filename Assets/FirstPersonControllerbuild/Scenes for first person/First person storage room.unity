@@ -323,8 +323,8 @@ MonoBehaviour:
   number: {fileID: 243294529}
   backHome: 1
   myName: First person house
-  myNameBad: First person house
-  myNameGood: First person house
+  myNameBad: Bad
+  myNameGood: Good
 --- !u!114 &243294529
 MonoBehaviour:
   m_ObjectHideFlags: 0
