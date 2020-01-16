@@ -19,6 +19,7 @@ public class Quest : MonoBehaviour
 
     public void Start()
     {
+        Debug.DrawRay(transform.position, transform.forward, Color.red, 2);
         DontDestroyOnLoad(this);
 
         NewQuest(storyQuests[listPos]);
