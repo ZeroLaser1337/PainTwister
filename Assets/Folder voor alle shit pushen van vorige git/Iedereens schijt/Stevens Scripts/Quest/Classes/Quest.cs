@@ -25,6 +25,10 @@ public class Quest : MonoBehaviour
 
         //GameCompleted(false);
     }
+    public void Update()
+    {
+        myQuestText.text = storyQuests[listPos].questText;    
+    }
 
     //public void OnCollisionEnter(Collision c)
     //{

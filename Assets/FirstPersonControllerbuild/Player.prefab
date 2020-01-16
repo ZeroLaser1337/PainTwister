@@ -14,8 +14,6 @@ GameObject:
   - component: {fileID: 3463222260588564633}
   - component: {fileID: 3463222260588564632}
   - component: {fileID: 3463222260588564647}
-  - component: {fileID: 686524719956793305}
-  - component: {fileID: 3463222260588564637}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -129,44 +127,6 @@ MonoBehaviour:
   rb: {fileID: 0}
   dir: {x: 0, y: 0, z: 0}
   movementSpeed: 3.5
---- !u!114 &686524719956793305
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3463222260588564646}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3706d709c46eb92408a1282cbc962a96, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &3463222260588564637
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3463222260588564646}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a116fff035d8b764a9e648a01f68c488, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  storyQuests:
-  - {fileID: 11400000, guid: 8d934cd37ccc6834ba05f6d789e34a7f, type: 2}
-  - {fileID: 11400000, guid: 45cc4aae8ba64334bac00393ef12bcb5, type: 2}
-  - {fileID: 11400000, guid: e1c9f26266c1d6043aa1f670f811b528, type: 2}
-  - {fileID: 11400000, guid: 1e8fcaf46e90ff44f878ea18f188a7cb, type: 2}
-  - {fileID: 11400000, guid: f2a6b1f24fbbc3747ae159acf86172a5, type: 2}
-  - {fileID: 11400000, guid: 503fdaf7dd40cd44886890ec989461fd, type: 2}
-  - {fileID: 11400000, guid: ee14721dcd743414fb4664acf1beb48b, type: 2}
-  - {fileID: 11400000, guid: 932d2682436a5154dae644ff8bad5047, type: 2}
-  - {fileID: 11400000, guid: f009bf84eb2edc04e9558cd9409353f6, type: 2}
-  itemsSpawned: {fileID: 0}
-  gameOverGO: {fileID: 0}
-  myQuestText: {fileID: 0}
-  listPos: 0
 --- !u!1 &3463222262361512478
 GameObject:
   m_ObjectHideFlags: 0

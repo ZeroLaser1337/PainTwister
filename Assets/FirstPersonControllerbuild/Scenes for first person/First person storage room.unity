@@ -156,12 +156,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quest: {fileID: 1761673043170046459, guid: 3cb7ad74ccd5c264fa01332d038e1d05, type: 3}
-  spawnLoc: {fileID: 7202401196267766432, guid: 14017762387febe40abf5636b2484210,
-    type: 3}
+  number: {fileID: 243294529}
   backHome: 1
   myName: First person house
   myNameBad: First person house
   myNameGood: First person house
+--- !u!114 &243294529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 243294526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f82189650939754bb66479bd5aed8dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questNumber: 0
 --- !u!1001 &725514277
 PrefabInstance:
   m_ObjectHideFlags: 0

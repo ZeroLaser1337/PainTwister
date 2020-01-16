@@ -5,6 +5,7 @@ using UnityEngine;
 public class Destination : MonoBehaviour
 {
     public Quest quest;
+    public QuestItemNumber number;
 
     public bool backHome;
     public string myName,myNameBad,myNameGood;
@@ -13,6 +14,11 @@ public class Destination : MonoBehaviour
     {        
         if(c.gameObject.tag == "Player")
         {
+            if(quest.storyQuests[quest.listPos].questItemNum == number.questNumber)
+            {
+                quest.listPos++;
+            }
+
             if (backHome)
             {
                 if(quest.knowledgeMeter.knowledgeAmount < 30)

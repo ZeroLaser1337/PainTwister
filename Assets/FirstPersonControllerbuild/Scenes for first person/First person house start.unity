@@ -217,6 +217,19 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 216537668}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &94434189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 94434188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f82189650939754bb66479bd5aed8dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questNumber: 1
 --- !u!114 &94434190
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -229,8 +242,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abd4a8acf80650243b7b388bc29664cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  quest: {fileID: 0}
-  spawnLoc: {fileID: 0}
+  quest: {fileID: 1486678485}
+  number: {fileID: 0}
   backHome: 0
   myName: First person consult
   myNameBad: 
@@ -505,6 +518,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: myQuestText
+      value: 
+      objectReference: {fileID: 300461787}
+    - target: {fileID: 0}
+      propertyPath: itemsSpawned
+      value: 
+      objectReference: {fileID: 1880773226}
     - target: {fileID: 3463222260588564646, guid: 2b1cf17ed5aa8b042b37b9aee1e85b0a,
         type: 3}
       propertyPath: m_Name
@@ -575,24 +596,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3463222260588564637, guid: 2b1cf17ed5aa8b042b37b9aee1e85b0a,
-        type: 3}
-      propertyPath: myQuestText
-      value: 
-      objectReference: {fileID: 300461787}
-    - target: {fileID: 3463222260588564637, guid: 2b1cf17ed5aa8b042b37b9aee1e85b0a,
-        type: 3}
-      propertyPath: itemsSpawned
-      value: 
-      objectReference: {fileID: 1880773226}
     - target: {fileID: 3463222262361512478, guid: 2b1cf17ed5aa8b042b37b9aee1e85b0a,
         type: 3}
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 3463222260588564637, guid: 2b1cf17ed5aa8b042b37b9aee1e85b0a, type: 3}
-    - {fileID: 686524719956793305, guid: 2b1cf17ed5aa8b042b37b9aee1e85b0a, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b1cf17ed5aa8b042b37b9aee1e85b0a, type: 3}
 --- !u!1 &684563090 stripped
 GameObject:
@@ -600,6 +609,19 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 216537668}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &684563091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 684563090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f82189650939754bb66479bd5aed8dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questNumber: 0
 --- !u!114 &684563092
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -612,8 +634,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abd4a8acf80650243b7b388bc29664cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  quest: {fileID: 0}
-  spawnLoc: {fileID: 0}
+  quest: {fileID: 1486678485}
+  number: {fileID: 1880773228}
   backHome: 0
   myName: First person storage room
   myNameBad: 
@@ -644,6 +666,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 89730a2592be70c4aa8e8b3a376e02a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1486678485 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1761673043170046459, guid: 3cb7ad74ccd5c264fa01332d038e1d05,
+    type: 3}
+  m_PrefabInstance: {fileID: 1761673043592136933}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a116fff035d8b764a9e648a01f68c488, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1628528966
@@ -752,6 +786,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1880773227}
+  - component: {fileID: 1880773228}
   m_Layer: 0
   m_Name: ItemHolder
   m_TagString: Untagged
@@ -773,6 +808,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1880773228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1880773226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f82189650939754bb66479bd5aed8dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questNumber: 0
 --- !u!1 &2016951171
 GameObject:
   m_ObjectHideFlags: 0
@@ -1139,6 +1187,11 @@ PrefabInstance:
       propertyPath: myQuestText
       value: 
       objectReference: {fileID: 300461787}
+    - target: {fileID: 1761673043170046459, guid: 3cb7ad74ccd5c264fa01332d038e1d05,
+        type: 3}
+      propertyPath: listPos
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3cb7ad74ccd5c264fa01332d038e1d05, type: 3}
 --- !u!1001 &4323949031584246649
