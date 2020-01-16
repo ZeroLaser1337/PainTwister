@@ -189,6 +189,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e73351bb14744614e913517df86c7f18, type: 3}
+--- !u!1 &577321327 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2831411620380083282, guid: e73351bb14744614e913517df86c7f18,
+    type: 3}
+  m_PrefabInstance: {fileID: 482477610}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &577321328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 577321327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3143139335dad7499c0b228be07c019, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transition: {fileID: 0}
+  loadingTime: 0
 --- !u!1 &1258250349
 GameObject:
   m_ObjectHideFlags: 0
@@ -272,6 +292,33 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1750725030 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1137872763450564857, guid: e73351bb14744614e913517df86c7f18,
+    type: 3}
+  m_PrefabInstance: {fileID: 482477610}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1750725032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1750725030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 226f837ce33d27e4d9b09d83b2ea2405, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  storage: 0
+  consultant: 0
+  house: 1
+  loading: {fileID: 577321328}
+  kn: {fileID: 0}
+  debug: {fileID: 2372875958524535550}
+  room: House
+  spooky: 
+  middle: 
 --- !u!1 &1776893392
 GameObject:
   m_ObjectHideFlags: 0
@@ -576,8 +623,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 0}
-  m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -884,6 +931,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quest: {fileID: 0}
+  knowledge: {fileID: 0}
   audiodialog: {fileID: 0}
   mainQuestion: {fileID: 2372875959148462579}
   buttons:
@@ -895,6 +943,7 @@ MonoBehaviour:
   _2Buttons: {fileID: 2372875958884405703}
   show4Buttons: 0
   show2Buttons: 0
+  storageRoom: {fileID: 0}
 --- !u!223 &2372875958290114042
 Canvas:
   m_ObjectHideFlags: 0
@@ -1231,8 +1280,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 0}
-  m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1378,8 +1427,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 0}
-  m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1644,8 +1693,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 0}
-  m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
