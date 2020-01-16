@@ -10,33 +10,30 @@ public class Quest : MonoBehaviour
 
     public GameObject itemsSpawned;
     public GameObject tutPopUp;
-
-    public RaycastHit hit;
+    public GameObject gameOverGO;
 
     public TextMeshProUGUI myQuestText;
 
-    public float rayDis;
-
     public int listPos;
-
-    public bool gameCompleted;
 
     public void Start()
     {
         DontDestroyOnLoad(this);
+
         NewQuest(storyQuests[listPos]);
+
+        GameCompleted(false);
     }
 
-    public void Update()
+    public void OnCollisionEnter(Collision c)
     {
-        if (Physics.Raycast(transform.position, transform.forward, out hit, rayDis) && hit.collider.gameObject.tag == "Item")
+        if(c.collider.gameObject.tag == "Item")
         {
-            if (Input.GetButtonDown("Fire1"))
+            if(storyQuests[listPos].questItemNum == c.collider.gameObject.GetComponent<QuestItemNumber>().questNumber)
             {
-                if (storyQuests[listPos].questItemNum == hit.collider.gameObject.GetComponent<QuestItemNumber>().questNumber)
-                {
-                    storyQuests[listPos].PickUp(this);
-                }
+                storyQuests[listPos].PickUp(this);
+
+                Destroy(c.collider.gameObject);
             }
         }
     }
@@ -57,14 +54,20 @@ public class Quest : MonoBehaviour
             listPos++;
 
             NewQuest(storyQuests[listPos]);
-
-            Destroy(hit.collider.gameObject);
         }
-        else gameCompleted = true;
+        else
+        {
+            GameCompleted(true);
+        }
     }
 
     public void newText(QuestItem item)
     {
         myQuestText.text = item.questText;
+    }
+
+    public void GameCompleted(bool done)
+    {
+        gameOverGO.SetActive(done);
     }
 }
