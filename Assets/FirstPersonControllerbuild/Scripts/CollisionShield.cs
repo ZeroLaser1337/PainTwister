@@ -9,12 +9,12 @@ public class CollisionShield : MonoBehaviour
     public GameObject target;
 
     public void Start()
-    {
+    {       
         Physics.IgnoreLayerCollision(8, 9);
     }
 
     void Update()
-    {
+    {   
         me.transform.position = target.transform.position;
     }
 }
