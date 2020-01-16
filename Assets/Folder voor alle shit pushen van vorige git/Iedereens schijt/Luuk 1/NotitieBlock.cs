@@ -12,6 +12,7 @@ public class NotitieBlock : MonoBehaviour
 
     public void Start()
     {
+        DontDestroyOnLoad(gameObject);
         notePad = gameObject;
     }
     public void Update()

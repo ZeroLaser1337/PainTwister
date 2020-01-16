@@ -33,6 +33,7 @@ public class TutorialPopUp : MonoBehaviour
                 startTimer = false;
             }
         }
+
     }
 
     public void TutPopUp(int i)
