@@ -1,0 +1,93 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &570450359451921089
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 570450359451921095}
+  - component: {fileID: 570450359451921092}
+  - component: {fileID: 570450359451921094}
+  - component: {fileID: 570450358888540794}
+  m_Layer: 0
+  m_Name: Quest Manager 1
+  m_TagString: GameManager
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &570450359451921095
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 570450359451921089}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -40.901787, y: -2.4441805, z: 13.458519}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &570450359451921092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 570450359451921089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a116fff035d8b764a9e648a01f68c488, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  knowledgeMeter: {fileID: 570450358888540794}
+  progression: {fileID: 0}
+  storyQuests:
+  - {fileID: 11400000, guid: 8d934cd37ccc6834ba05f6d789e34a7f, type: 2}
+  - {fileID: 11400000, guid: 45cc4aae8ba64334bac00393ef12bcb5, type: 2}
+  - {fileID: 11400000, guid: e1c9f26266c1d6043aa1f670f811b528, type: 2}
+  - {fileID: 11400000, guid: 1e8fcaf46e90ff44f878ea18f188a7cb, type: 2}
+  - {fileID: 11400000, guid: f2a6b1f24fbbc3747ae159acf86172a5, type: 2}
+  - {fileID: 11400000, guid: 503fdaf7dd40cd44886890ec989461fd, type: 2}
+  - {fileID: 11400000, guid: ee14721dcd743414fb4664acf1beb48b, type: 2}
+  - {fileID: 11400000, guid: 932d2682436a5154dae644ff8bad5047, type: 2}
+  - {fileID: 11400000, guid: f009bf84eb2edc04e9558cd9409353f6, type: 2}
+  itemsSpawned: {fileID: 0}
+  gameOverGO: {fileID: 0}
+  player: {fileID: 0}
+  myQuestText: {fileID: 0}
+  listPos: 0
+--- !u!114 &570450359451921094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 570450359451921089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22dc300683acc564295eab7e9cb6a68f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  knowledgeMeter: {fileID: 0}
+  ques: {fileID: 0}
+  knowledge: {fileID: 0}
+  q: {fileID: 0}
+--- !u!114 &570450358888540794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 570450359451921089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89730a2592be70c4aa8e8b3a376e02a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  knowledgeAmount: 0

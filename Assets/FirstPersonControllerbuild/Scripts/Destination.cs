@@ -10,6 +10,11 @@ public class Destination : MonoBehaviour
     public bool backHome;
     public string myName,myNameBad,myNameGood;
 
+    public void Update()
+    {
+        quest = GameObject.FindGameObjectWithTag("GameManager").GetComponent<Quest>();
+    }
+
     public void OnCollisionEnter(Collision c)
     {        
         if(c.gameObject.tag == "Player")
