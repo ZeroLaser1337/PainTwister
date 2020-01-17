@@ -13,7 +13,6 @@ public class ConversationSystem : MonoBehaviour
     protected DialogueProgress dialogueProgress;
     public TextMeshProUGUI mainQuestion;
     protected AudioSource voiceOver;
-    public Button[] buttons;
     public GameObject _4Buttons;
     public GameObject _2Buttons;
     public bool show4Buttons;
