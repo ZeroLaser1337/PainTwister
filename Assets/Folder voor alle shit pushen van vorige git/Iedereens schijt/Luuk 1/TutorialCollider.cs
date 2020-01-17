@@ -5,7 +5,6 @@ using UnityEngine;
 public class TutorialCollider : MonoBehaviour
 {
     public int tutorialPopUpNumber;
-    public int knowledgeAdded;
     public bool notesAdded;
 
     public Sprite notes;
