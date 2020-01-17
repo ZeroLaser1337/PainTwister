@@ -755,8 +755,25 @@ PrefabInstance:
       propertyPath: m_textInfo.pageCount
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2082593339267961387, guid: 9cd1ca99abf0e434589f9bece12fceef,
+        type: 3}
+      propertyPath: m_Name
+      value: Quest text
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9cd1ca99abf0e434589f9bece12fceef, type: 3}
+--- !u!114 &395199386 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2082593339267961384, guid: 9cd1ca99abf0e434589f9bece12fceef,
+    type: 3}
+  m_PrefabInstance: {fileID: 395199385}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &590296066
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1052,6 +1069,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 570450359451921092, guid: 3a300940a4308684789538bd37f836bb,
+        type: 3}
+      propertyPath: myQuestText
+      value: 
+      objectReference: {fileID: 395199386}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a300940a4308684789538bd37f836bb, type: 3}
 --- !u!1 &684563090 stripped
