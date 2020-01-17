@@ -6,10 +6,11 @@ using TMPro;
 
 public class ConsultantDialogue : ConversationSystem
 {
-    
+    public Audiodialog audiodialog;
    void Start()
    {
        Begin();
+       dialogueProgress.StartDialogue(audiodialog);
    }
 
     void Update()
