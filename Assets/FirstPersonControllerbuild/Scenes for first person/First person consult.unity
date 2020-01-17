@@ -222,6 +222,11 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1440624502}
+    - target: {fileID: 4323949031337434595, guid: 2c113ab65145bf04d831d358994efc96,
+        type: 3}
+      propertyPath: quest
+      value: 
+      objectReference: {fileID: 488336125}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c113ab65145bf04d831d358994efc96, type: 3}
 --- !u!114 &332379230 stripped
@@ -270,7 +275,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abd4a8acf80650243b7b388bc29664cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  quest: {fileID: 1761673043170046459, guid: 3cb7ad74ccd5c264fa01332d038e1d05, type: 3}
+  quest: {fileID: 488336125}
   number: {fileID: 392821439}
   backHome: 1
   myName: First person house
