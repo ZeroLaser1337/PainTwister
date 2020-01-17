@@ -9,6 +9,9 @@ TagManager:
   - Door
   - GameManager
   - QuestProgress
+  - Big Box
+  - Medium Box
+  - Small Box
   layers:
   - Default
   - TransparentFX
