@@ -8,6 +8,7 @@ TagManager:
   - PlayerTag
   - Door
   - GameManager
+  - QuestProgress
   layers:
   - Default
   - TransparentFX

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class CollisionShield : MonoBehaviour
 {
+    public Quest quest;
+
     public GameObject me;
 
     public GameObject target;
@@ -16,5 +18,22 @@ public class CollisionShield : MonoBehaviour
     void Update()
     {   
         me.transform.position = target.transform.position;
+    }
+
+    private void OnCollisionEnter(Collision c)
+    {
+        if(c.collider.gameObject.tag == ("Item"))
+        {
+            Debug.Log("hit");
+
+            if (quest.storyQuests[quest.listPos].questItemNum == c.collider.gameObject.GetComponent<QuestItemNumber>().questNumber)
+           {
+                quest.storyQuests[quest.listPos].PickUp(quest);
+
+                Destroy(c.collider.gameObject);
+
+                c.collider.gameObject.SetActive(false);
+           }
+        }
     }
 }

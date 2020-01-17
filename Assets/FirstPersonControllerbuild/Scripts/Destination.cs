@@ -16,7 +16,7 @@ public class Destination : MonoBehaviour
         {
             if(quest.storyQuests[quest.listPos].questItemNum == number.questNumber)
             {
-                quest.listPos++;
+                quest.progression.listPos++;
             }
 
             if (backHome)

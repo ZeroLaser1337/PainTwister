@@ -7,6 +7,7 @@ using TMPro;
 public class Quest : MonoBehaviour
 {
     public KnowledgeMeter knowledgeMeter;
+    public ListProgression progression;
     public List<QuestItem> storyQuests;
 
     public GameObject itemsSpawned;
@@ -19,16 +20,15 @@ public class Quest : MonoBehaviour
 
     public void Start()
     {
-        Debug.DrawRay(transform.position, transform.forward, Color.red, 2);
-        DontDestroyOnLoad(this);
-
         NewQuest(storyQuests[listPos]);
 
         //GameCompleted(false);
     }
+
     public void Update()
     {
-        myQuestText.text = storyQuests[listPos].questText;    
+        myQuestText.text = storyQuests[listPos].questText;
+        progression = GameObject.FindGameObjectWithTag("QuestProgress").GetComponent<ListProgression>();
     }
 
     //public void OnCollisionEnter(Collision c)
@@ -57,7 +57,7 @@ public class Quest : MonoBehaviour
     {
         if (listPos < storyQuests.Count - 1)
         {
-            listPos++;
+            progression.listPos++;
 
             NewQuest(storyQuests[listPos]);
         }

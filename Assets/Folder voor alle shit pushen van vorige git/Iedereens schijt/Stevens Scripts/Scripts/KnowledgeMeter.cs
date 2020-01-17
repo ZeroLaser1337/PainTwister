@@ -8,7 +8,7 @@ public class KnowledgeMeter : MonoBehaviour
 
     void Awake()
     {
-        DontDestroyOnLoad(this);
+        //DontDestroyOnLoad(this);
     }
 
     public void ResetKnowledge()
