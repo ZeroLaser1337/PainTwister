@@ -2654,7 +2654,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1621658896}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.211, y: -0.635, z: 0.126}
+  m_LocalPosition: {x: -3.807, y: -0.635, z: 1.268}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 333883880}
@@ -3592,6 +3592,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Quest Manager
       objectReference: {fileID: 0}
+    - target: {fileID: 570450359451921092, guid: 3a300940a4308684789538bd37f836bb,
+        type: 3}
+      propertyPath: progression
+      value: 
+      objectReference: {fileID: 720680178}
+    - target: {fileID: 570450359451921092, guid: 3a300940a4308684789538bd37f836bb,
+        type: 3}
+      propertyPath: itemsSpawned
+      value: 
+      objectReference: {fileID: 1880773226}
+    - target: {fileID: 570450359451921092, guid: 3a300940a4308684789538bd37f836bb,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1856625101}
+    - target: {fileID: 570450359451921092, guid: 3a300940a4308684789538bd37f836bb,
+        type: 3}
+      propertyPath: myQuestText
+      value: 
+      objectReference: {fileID: 300461787}
     - target: {fileID: 570450359451921095, guid: 3a300940a4308684789538bd37f836bb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3647,26 +3667,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 570450359451921092, guid: 3a300940a4308684789538bd37f836bb,
-        type: 3}
-      propertyPath: progression
-      value: 
-      objectReference: {fileID: 720680178}
-    - target: {fileID: 570450359451921092, guid: 3a300940a4308684789538bd37f836bb,
-        type: 3}
-      propertyPath: itemsSpawned
-      value: 
-      objectReference: {fileID: 1880773226}
-    - target: {fileID: 570450359451921092, guid: 3a300940a4308684789538bd37f836bb,
-        type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 1856625101}
-    - target: {fileID: 570450359451921092, guid: 3a300940a4308684789538bd37f836bb,
-        type: 3}
-      propertyPath: myQuestText
-      value: 
-      objectReference: {fileID: 300461787}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a300940a4308684789538bd37f836bb, type: 3}
 --- !u!1 &2082593338716906450

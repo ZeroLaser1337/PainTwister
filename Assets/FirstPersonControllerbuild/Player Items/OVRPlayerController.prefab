@@ -665,7 +665,7 @@ MonoBehaviour:
   noLongerPoppinUp: 000000
   timer: 90
   resetTimer: 90
-  offset: 4
+  offset: 2
   childCount: 0
   startTimer: 0
   managerTut: {fileID: 0}
