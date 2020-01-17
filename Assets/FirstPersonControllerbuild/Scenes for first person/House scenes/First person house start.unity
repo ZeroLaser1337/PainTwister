@@ -561,6 +561,12 @@ PrefabInstance:
     - {fileID: 6924852736739366737, guid: 89ce5dc5c84e7314bbe4c6e61a6e0196, type: 3}
     - {fileID: 2457180549757059552, guid: 89ce5dc5c84e7314bbe4c6e61a6e0196, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 89ce5dc5c84e7314bbe4c6e61a6e0196, type: 3}
+--- !u!4 &216537669 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3758466840352216447, guid: 89ce5dc5c84e7314bbe4c6e61a6e0196,
+    type: 3}
+  m_PrefabInstance: {fileID: 216537668}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &269545291
 GameObject:
   m_ObjectHideFlags: 0
@@ -3848,26 +3854,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Quest Manager
       objectReference: {fileID: 0}
-    - target: {fileID: 570450359451921092, guid: 3a300940a4308684789538bd37f836bb,
-        type: 3}
-      propertyPath: progression
-      value: 
-      objectReference: {fileID: 720680178}
-    - target: {fileID: 570450359451921092, guid: 3a300940a4308684789538bd37f836bb,
-        type: 3}
-      propertyPath: itemsSpawned
-      value: 
-      objectReference: {fileID: 1880773226}
-    - target: {fileID: 570450359451921092, guid: 3a300940a4308684789538bd37f836bb,
-        type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 1856625101}
-    - target: {fileID: 570450359451921092, guid: 3a300940a4308684789538bd37f836bb,
-        type: 3}
-      propertyPath: myQuestText
-      value: 
-      objectReference: {fileID: 300461787}
     - target: {fileID: 570450359451921095, guid: 3a300940a4308684789538bd37f836bb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3923,6 +3909,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 570450359451921092, guid: 3a300940a4308684789538bd37f836bb,
+        type: 3}
+      propertyPath: progression
+      value: 
+      objectReference: {fileID: 720680178}
+    - target: {fileID: 570450359451921092, guid: 3a300940a4308684789538bd37f836bb,
+        type: 3}
+      propertyPath: itemsSpawned
+      value: 
+      objectReference: {fileID: 1880773226}
+    - target: {fileID: 570450359451921092, guid: 3a300940a4308684789538bd37f836bb,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1856625101}
+    - target: {fileID: 570450359451921092, guid: 3a300940a4308684789538bd37f836bb,
+        type: 3}
+      propertyPath: myQuestText
+      value: 
+      objectReference: {fileID: 300461787}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a300940a4308684789538bd37f836bb, type: 3}
 --- !u!1 &2082593338716906450
@@ -4533,6 +4539,11 @@ PrefabInstance:
       propertyPath: quest
       value: 
       objectReference: {fileID: 691599646}
+    - target: {fileID: 4323949031337434595, guid: 2c113ab65145bf04d831d358994efc96,
+        type: 3}
+      propertyPath: transform
+      value: 
+      objectReference: {fileID: 216537669}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c113ab65145bf04d831d358994efc96, type: 3}
 --- !u!1001 &6494873392622420570
