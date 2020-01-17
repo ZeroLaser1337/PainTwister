@@ -4,12 +4,6 @@ using UnityEngine;
 
 public class StorageRoomDialogue : ConversationSystem
 {
-    public Boxes storageRoom;
-
-    void OnEnable()
-    {
-        mainQuestion.text = storageRoom.boxesQuestion;
-    }
     void Update()
     {
         UpdateButtons();
@@ -18,6 +12,8 @@ public class StorageRoomDialogue : ConversationSystem
 
     public void StorageRoomButton(int choice, int kn)
     {
+        show2Buttons = false;
+        quest.listPos++;
         knowledge.UpdateKnowledge(kn);          
     }
 }

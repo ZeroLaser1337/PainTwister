@@ -9,7 +9,6 @@ public class ConversationSystem : MonoBehaviour
 {
     public Quest quest;
     public KnowledgeMeter knowledge;
-    public Audiodialog audiodialog;
     protected DialogueProgress dialogueProgress;
     public TextMeshProUGUI mainQuestion;
     protected AudioSource voiceOver;
@@ -22,7 +21,6 @@ public class ConversationSystem : MonoBehaviour
         quest = GetComponent<Quest>();
         voiceOver = GetComponent<AudioSource>();
         dialogueProgress = GetComponent<DialogueProgress>();
-        dialogueProgress.StartDialogue(audiodialog);
     }
     public void UpdateProgress()
     {

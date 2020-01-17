@@ -30,9 +30,7 @@ public class CollisionShield : MonoBehaviour
            {
                 quest.storyQuests[quest.listPos].PickUp(quest);
 
-                Destroy(c.collider.gameObject);
-
-                c.collider.gameObject.SetActive(false);
+                c.gameObject.transform.position = new Vector3(0,5000,0);
            }
         }
     }
