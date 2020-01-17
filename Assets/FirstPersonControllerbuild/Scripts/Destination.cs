@@ -6,6 +6,7 @@ public class Destination : MonoBehaviour
 {
     public Quest quest;
     public QuestItemNumber number;
+    public AudioSource deur;
 
     public bool backHome;
     public string myName,myNameBad,myNameGood;
@@ -19,6 +20,7 @@ public class Destination : MonoBehaviour
     {        
         if(c.gameObject.tag == "Player")
         {
+            deur.Play();
             if(quest.storyQuests[quest.listPos].questItemNum == number.questNumber)
             {
                 quest.progression.listPos++;
