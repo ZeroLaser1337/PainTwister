@@ -2012,6 +2012,11 @@ PrefabInstance:
       propertyPath: quest
       value: 
       objectReference: {fileID: 1847955060}
+    - target: {fileID: 4323949031337434595, guid: 2c113ab65145bf04d831d358994efc96,
+        type: 3}
+      propertyPath: transform
+      value: 
+      objectReference: {fileID: 6965520272223359708}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c113ab65145bf04d831d358994efc96, type: 3}
 --- !u!1001 &2100874659
@@ -4557,3 +4562,9 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.9540576, y: 2.5579464, z: 0.95700425}
   m_Center: {x: 0, y: 1.2789732, z: -0.00000023841858}
+--- !u!4 &6965520272223359708 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1900565501298080280, guid: 26981b10789ed52439a28d68a4c19690,
+    type: 3}
+  m_PrefabInstance: {fileID: 6965520272223359699}
+  m_PrefabAsset: {fileID: 0}
