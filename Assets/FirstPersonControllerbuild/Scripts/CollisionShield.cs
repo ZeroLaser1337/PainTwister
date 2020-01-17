@@ -10,6 +10,8 @@ public class CollisionShield : MonoBehaviour
 
     public GameObject target;
 
+    public Transform transform;
+
     public void Start()
     {       
         Physics.IgnoreLayerCollision(8, 9);
@@ -30,7 +32,7 @@ public class CollisionShield : MonoBehaviour
            {
                 quest.storyQuests[quest.listPos].PickUp(quest);
 
-                c.gameObject.transform.position = new Vector3(0,5000,0);
+                c.gameObject.transform.position = transform.position;
            }
         }
     }
